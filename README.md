@@ -24,32 +24,37 @@ Foundry installed
 Git installed
 
 <h4>Clone the Repository</h4>
-```
+
+```bash
 git clone https://github.com/yourusername/erc20-foundry-testing.git
 cd erc20-foundry-testing
 ```
 
 <h4>Install Dependencies</h4>
 Make sure to install dependencies with Foundry:
-```
+
+```bash
 forge install
 ```
 
 <h4>OpenZeppelin Contracts</h4>
 This project utilizes OpenZeppelin’s contracts for reliable and secure token implementations. If they’re not installed automatically, you can add them manually:
-```
+
+```bash
 forge install OpenZeppelin/openzeppelin-contracts
 ```
 
 <h4>Usage</h4>
 Run tests with Foundry to ensure that the ERC-20 functionalities work as expected and pass security checks:
-```
+
+```bash
 forge test
 ```
 To inspect vulnerabilities, additional checks and assertions are written within the tests. Each test case checks for edge cases in ERC-20 operations to enhance security awareness.
 
 <h4>Folder Structure</h4>
-```
+
+```bash
 .
 ├── script/
 │   └── DeployKoinerToken.s.sol # Script for deployment of the Contract
